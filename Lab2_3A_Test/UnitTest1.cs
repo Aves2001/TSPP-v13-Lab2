@@ -1,39 +1,39 @@
-using Microsoft.VisualStudio.TestTools.UnitTesting;
+п»їusing Microsoft.VisualStudio.TestTools.UnitTesting;
 namespace Lab2_3_Test
 {
     [TestClass]
     public class UnitTest1
     {
         [TestMethod]
-        public void SetSizeArray() // запит корректного розміру масива
+        public void SetSizeArray() // Р·Р°РїРёС‚ РєРѕСЂСЂРµРєС‚РЅРѕРіРѕ СЂРѕР·РјС–СЂСѓ РјР°СЃРёРІР°
         {
             int size = Lab2_3A.Program.SetSizeArray("3");
-            Assert.AreEqual(3, size); // перевірка результату
+            Assert.AreEqual(3, size); // РїРµСЂРµРІС–СЂРєР° СЂРµР·СѓР»СЊС‚Р°С‚Сѓ
         }
 
         [TestMethod]
-        public void SetValueArray() // встановлення значень елементів масива
+        public void SetValueArray() // РІСЃС‚Р°РЅРѕРІР»РµРЅРЅСЏ Р·РЅР°С‡РµРЅСЊ РµР»РµРјРµРЅС‚С–РІ РјР°СЃРёРІР°
         {
             int[] arr = new int[1];
             Lab2_3A.Program.SetValueArray(arr, "2021");
-            Assert.AreEqual(2021, arr[0]); // перевірка результату
+            Assert.AreEqual(2021, arr[0]); // РїРµСЂРµРІС–СЂРєР° СЂРµР·СѓР»СЊС‚Р°С‚Сѓ
         }
 
         [TestMethod]
         public void NumMoreZero()
         {
-            int[] arr = new int[5] { 1, -2, -3, 4, -5 }; // масив з двома додатними числами
-            uint res = 2; // результат має бути 2
-            uint result = Lab2_3A.Program.NumMoreZero(arr);  // повертає кількість додатних елементів
-            Assert.AreEqual(res, result); // перевірка результату
+            int[] arr = new int[5] { 1, -2, -3, 4, -5 }; // РјР°СЃРёРІ Р· РґРІРѕРјР° РґРѕРґР°С‚РЅРёРјРё С‡РёСЃР»Р°РјРё
+            uint res = 2; // СЂРµР·СѓР»СЊС‚Р°С‚ РјР°С” Р±СѓС‚Рё 2
+            uint result = Lab2_3A.Program.NumMoreZero(arr);  // РїРѕРІРµСЂС‚Р°С” РєС–Р»СЊРєС–СЃС‚СЊ РґРѕРґР°С‚РЅРёС… РµР»РµРјРµРЅС‚С–РІ
+            Assert.AreEqual(res, result); // РїРµСЂРµРІС–СЂРєР° СЂРµР·СѓР»СЊС‚Р°С‚Сѓ
         }
 
         [TestMethod]
-        public void DobutokToMinimumModul() // повертає добуток елементів масиву, розташованих до мінімального за модулем елемента.
+        public void DobutokToMinimumModul() // РїРѕРІРµСЂС‚Р°С” РґРѕР±СѓС‚РѕРє РµР»РµРјРµРЅС‚С–РІ РјР°СЃРёРІСѓ, СЂРѕР·С‚Р°С€РѕРІР°РЅРёС… РґРѕ РјС–РЅС–РјР°Р»СЊРЅРѕРіРѕ Р·Р° РјРѕРґСѓР»РµРј РµР»РµРјРµРЅС‚Р°.
         {
-            int[] arr = new int[5] { 3, 2, -1, -99, -123 }; // -1 мінімальний за модулем елемент
-            int result = int.Parse(Lab2_3A.Program.DobutokToMinimumModul(arr)); // має 3 * 2 = 6
-            Assert.AreEqual(6, result); // перевірка результату
+            int[] arr = new int[5] { 3, 2, -1, -99, -123 }; // -1 РјС–РЅС–РјР°Р»СЊРЅРёР№ Р·Р° РјРѕРґСѓР»РµРј РµР»РµРјРµРЅС‚
+            int result = int.Parse(Lab2_3A.Program.DobutokToMinimumModul(arr)); // РјР°С” 3 * 2 = 6
+            Assert.AreEqual(6, result); // РїРµСЂРµРІС–СЂРєР° СЂРµР·СѓР»СЊС‚Р°С‚Сѓ
         }
     }
 }
